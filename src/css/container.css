@@ -1,19 +1,29 @@
-/* Styles for Mobile devices */
 .container {
-  min-width: 320px;
-  max-width: 375px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
   margin: 0 auto;
-  padding: 0 16px;
 }
-/* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+
+header {
+  background-color: #0d6efd;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.nav-list-item a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-list-item a:hover {
+  color: #ffe600;
 }
